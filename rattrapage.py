@@ -19,7 +19,7 @@ def creerPoint():
 
 #Exercice 3: définir une fonction qui prends 3 variables en Paramètres et qui les affiche proprement à l'écran.
 def Affichage(nom:str, X:int, Y:int):
-    print(f'Point {nom}, de coordonnées x = {X} et Y = {Y}')   
+    print(f'Point {nom}, de coordonnées X = {X} et Y = {Y}')   
 #Affichage('S', 12, 14)
 
 #Exercice 4: définir une fonction qui reçoit 3 points avec leurs coordonnées, qui les affiches et qui vérifie l'alignement des points.
@@ -43,7 +43,7 @@ def Fonction():
         
     for point in points:
         nom, X, Y = point
-        print(f'Point {nom} de coordonnées x = {X} et Y = {Y}')
+        print(f'Point {nom} de coordonnées X = {X} et Y = {Y}')
     
     # On prends chaque ensemble d'éléments de la liste (chaque point) pour les attribuer à une variable chacune: chaque point constitue une variable.
     A = points[0]
