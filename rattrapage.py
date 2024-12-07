@@ -1,14 +1,11 @@
-'''J'ai pas tellement compris l'utilité des classes donc je l'ai défini dans l'exercice 1 mais j'ai fais sans elle par la suite car sans définir une classe, 
-cela me semblait plus logique pour le moment (même si ça me rallonge surement le code).'''
-
-# Exercice 1: déclarer une classe
+# Déclarer une classe
 class PointGeo:
     def __init__(self, nom: str, x: int, y: int):
         self.nom = nom  # Caractère représentant le nom du point
         self.x = x      # Coordonnée X du point
         self.y = y      # Coordonnée Y du point   
         
-#Exercice 2: définir une fonction qui appelle 3 valeurs depuis l'utilisateur, constituant un ensemble de 3 variables définissant un point.
+# Définir une fonction qui appelle 3 valeurs depuis l'utilisateur, constituant un ensemble de 3 variables définissant un point.
 def creerPoint():
     nom = input('Entrez le nom du point: ')
     X = int(input('Entrez la coordonnée X du point: '))
@@ -17,12 +14,12 @@ def creerPoint():
     return point 
 #print(creerPoint()) 
 
-#Exercice 3: définir une fonction qui prends 3 variables en Paramètres et qui les affiche proprement à l'écran.
+# Définir une fonction qui prends 3 variables en Paramètres et qui les affiche proprement à l'écran.
 def Affichage(nom:str, X:int, Y:int):
     print(f'Point {nom}, de coordonnées X = {X} et Y = {Y}')   
 #Affichage('S', 12, 14)
 
-#Exercice 4: définir une fonction qui reçoit 3 points avec leurs coordonnées, qui les affiches et qui vérifie l'alignement des points.
+# Définir une fonction qui reçoit 3 points avec leurs coordonnées, qui les affiches et qui vérifie l'alignement des points.
 '''La fonction demande dans un premier temps d'entrer 3 fois de suite le nom d'un point avec ses coordonnées X et Y, puis les ajoute dans une liste. 
 Ensuite les éléments de la liste sont affichés les uns après les autres sous la forme: nom du point, coordonnées X et Y. 
 Enfin, si les points sont alignés, une phrase le spécifie. Pour cela, il a fallu déclarer quelques variables directement depuis les différents points dans la liste "points"
